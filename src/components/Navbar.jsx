@@ -2,27 +2,50 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/60 bg-white/70 border-b border-black/5">
+    <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-[#171717]/70 bg-[#171717]/80 border-b border-white/10">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        <a href="#top" className="font-extrabold text-lg tracking-tight">
-          <span className="bg-gradient-to-r from-indigo-500 via-fuchsia-500 to-cyan-500 bg-clip-text text-transparent">
+        <a
+          href="#top"
+          className="font-extrabold text-lg tracking-tight"
+          style={{ fontFamily: 'Rubik, Helvetica, sans' }}
+        >
+          <span className="bg-gradient-to-r from-[#FF8400] via-[#A23405] to-[#6A1F6A] bg-clip-text text-transparent">
             Winty Dev
           </span>
         </a>
-        <nav className="hidden md:flex items-center gap-6 text-sm text-gray-700">
-          <a href="#work" className="hover:text-gray-900 transition-colors">Work</a>
-          <a href="#contact" className="hover:text-gray-900 transition-colors">Contact</a>
-          <a href="#about" className="hover:text-gray-900 transition-colors">About</a>
+        <nav
+          className="hidden md:flex items-center gap-6 text-sm"
+          style={{ color: '#F7FFF9', fontFamily: 'Inter, sans-serif, sans' }}
+        >
+          <a href="#work" className="transition-colors hover:text-[#FF8400]">Projekty</a>
+          <a href="#contact" className="transition-colors hover:text-[#FF8400]">Kontakt</a>
+          <a href="#about" className="transition-colors hover:text-[#FF8400]">O mně</a>
         </nav>
-        <div className="flex items-center gap-3">
-          <a href="mailto:hello@winty.dev" aria-label="Email" className="p-2 rounded-full hover:bg-gray-100">
-            <Mail className="h-5 w-5" />
+        <div className="flex items-center gap-2">
+          <a
+            href="mailto:ahoj@winty.dev"
+            aria-label="Email"
+            className="p-2 rounded-full hover:bg-white/10 transition-colors"
+          >
+            <Mail className="h-5 w-5" color="#F7FFF9" />
           </a>
-          <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub" className="p-2 rounded-full hover:bg-gray-100">
-            <Github className="h-5 w-5" />
+          <a
+            href="https://github.com/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub"
+            className="p-2 rounded-full hover:bg-white/10 transition-colors"
+          >
+            <Github className="h-5 w-5" color="#F7FFF9" />
           </a>
-          <a href="https://linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn" className="p-2 rounded-full hover:bg-gray-100">
-            <Linkedin className="h-5 w-5" />
+          <a
+            href="https://linkedin.com/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn"
+            className="p-2 rounded-full hover:bg-white/10 transition-colors"
+          >
+            <Linkedin className="h-5 w-5" color="#F7FFF9" />
           </a>
         </div>
       </div>
