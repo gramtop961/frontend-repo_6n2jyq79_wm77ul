@@ -1,5 +1,5 @@
 import Spline from '@splinetool/react-spline';
-import { Rocket } from 'lucide-react';
+import { Rocket, Mail } from 'lucide-react';
 
 export default function Hero() {
   return (
@@ -18,22 +18,23 @@ export default function Hero() {
           <p className="mt-5 text-base sm:text-lg max-w-xl" style={{ color: 'rgba(247,255,249,0.8)', fontFamily: 'Inter, sans-serif, sans' }}>
             Kombinuji precizní kód a jemné animace, aby weby působily živě. Prozkoumej mou práci a pohraj si s 3D scénou vedle.
           </p>
-          <div className="mt-8 flex flex-wrap gap-3">
+          <div className="mt-8 flex flex-wrap items-center gap-3">
             <a href="#work" className="inline-flex items-center justify-center rounded-md px-5 py-3 text-sm font-semibold shadow transition-colors"
                style={{ background: '#FF8400', color: '#171717', fontFamily: 'Inter, sans-serif, sans' }}>
               Zobrazit projekty
             </a>
-            <a href="#contact" className="inline-flex items-center justify-center rounded-md border px-5 py-3 text-sm font-semibold transition-colors"
-               style={{ borderColor: 'rgba(247,255,249,0.15)', background: 'transparent', color: '#F7FFF9', fontFamily: 'Inter, sans-serif, sans' }}>
-              Napiš mi
-            </a>
+            <div className="inline-flex items-center gap-2 rounded-md border px-5 py-3 text-sm font-medium select-all"
+                 style={{ borderColor: 'rgba(247,255,249,0.15)', color: '#F7FFF9', fontFamily: 'Inter, sans-serif, sans' }}>
+              <Mail className="h-4 w-4" />
+              <span>simavitezslav@gmail.com</span>
+            </div>
           </div>
         </div>
         <div className="relative order-1 lg:order-2">
           <div className="relative h-[420px] sm:h-[520px] lg:h-[620px] w-full rounded-2xl overflow-hidden"
                style={{ background: '#171717', border: '1px solid rgba(247,255,249,0.06)' }}>
             <Spline
-              scene="https://prod.spline.design/Gt5HUob8aGDxOUep/scene.splinecode"
+              scene="https://prod.spline.design/6Yx7ZxG6UytzszIu/scene.splinecode"
               style={{ width: '100%', height: '100%' }}
             />
             <div className="pointer-events-none absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(23,23,23,0.6), transparent 40%, rgba(23,23,23,0.3))' }} />
