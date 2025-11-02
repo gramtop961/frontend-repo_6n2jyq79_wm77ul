@@ -23,11 +23,13 @@ export default function Hero() {
                style={{ background: '#FF8400', color: '#171717', fontFamily: 'Inter, sans-serif, sans' }}>
               Zobrazit projekty
             </a>
-            <div className="inline-flex items-center gap-2 rounded-md border px-5 py-3 text-sm font-medium select-all"
-                 style={{ borderColor: 'rgba(247,255,249,0.15)', color: '#F7FFF9', fontFamily: 'Inter, sans-serif, sans' }}>
-              <Mail className="h-4 w-4" />
-              <span>simavitezslav@gmail.com</span>
-            </div>
+            <a
+              href="mailto:simavitezslav@gmail.com"
+              className="inline-flex items-center gap-2 rounded-md border px-5 py-3 text-sm font-semibold transition-colors hover:bg-white/5"
+              style={{ borderColor: 'rgba(247,255,249,0.15)', color: '#F7FFF9', fontFamily: 'Inter, sans-serif, sans' }}
+            >
+              <Mail className="h-4 w-4" /> Napiš mi
+            </a>
           </div>
         </div>
         <div className="relative order-1 lg:order-2">
